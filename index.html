@@ -1,46 +1,87 @@
-//html code
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub User Search</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search GitHub username...">
-        <button onclick="searchUser()">Search</button>
-    </div>
-    <div id="resultContainer"></div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dev finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    
+    <title>Github User Search App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-       <div>
-           <h1>devFinder</h1>
-          
-           
-           <div>
-               <input type="text" id="searchBar" placeholder="Search...">
-               <span class="material-symbols-outlined">visibility</span>
-           </div>
-        
-           
-       </div>
+    <header>
+        <div class="head">dev Finder</div>
+        <div class="light-dark mode">
+            <button class="color-mode_btn light--hidden" aria-label="Toggle light mode"> LIGHT
+                <i class="fa-solid fa-sun"></i> </button>
+            <button class="color-mode_btn dark--hidden" aria-label="Toggle dark mode"> DARK
+                <i class="fa-solid fa-moon"></i> </button>
+        </div>
+    </header>
+    <div class="search">
+        <div class="searchText">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search Github username..." />
+        </div>
+        <div class="searchbtn">Search</div>
+    </div>
+    <div class="resultBody">
+        <div class="githubHead">
+            <div class="mainImg">Circle</div>
+            <div class="githubInfo">
+                <div class="githubUser">Github Username</div>
+                <div class="githubUserName"><a href="">@githubusername</a></div>
+                <div class="githubJoinedDate">Joined Date</div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="githubFact">
+            <div class="githubBio">Github Bio...</div>
+
+            <div class="githubRepo">
+                <div class="repos">
+                    <div class="repoHeading">Repos</div>
+                    <div class="repoTotal">0</div>
+                </div>
+                <div class="followers">
+                    <div class="followerHeading">Followers</div>
+                    <div class="followerTotal">0</div>
+                </div>
+                <div class="following">
+                    <div class="following Heading">Following</div>
+                    <div class="following Total">0</div>
+                </div>
+            </div>
+
+            <div class="githubSocial">
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="locations">Location</p>
+                </div>
+
+                <div class="twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <p class="twit">Twitter</p>
+                </div>
+
+                <div class="website">
+                    <i class="fa-solid fa-link"></i>
+                    <p class="websites">Website</p>
+                </div>
+
+                <div class="company">
+                    <i class="fa-solid fa-building"></i>
+                    <p class="companies">Company</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/d77a9f41c5.js" crossorigin="anonymous"></script>
     </body>
-    
-    </html>
-    
-</body>
 </html>
