@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;1,300&display=swap"
         rel="stylesheet">
-    
+
     <title>Github User Search App</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,10 +17,9 @@
     <header>
         <div class="head">dev Finder</div>
         <div class="light-dark mode">
-            <button class="color-mode_btn light--hidden" aria-label="Toggle light mode"> LIGHT
-                <i class="fa-solid fa-sun"></i> </button>
-            <button class="color-mode_btn dark--hidden" aria-label="Toggle dark mode"> DARK
-                <i class="fa-solid fa-moon"></i> </button>
+            
+            <button id="modeToggle" aria-label="Toggle dark and light mode">
+                <i id="icon" class="fa-solid fa-moon"></i>
         </div>
     </header>
     <div class="search">
@@ -32,14 +31,14 @@
     </div>
     <div class="resultBody">
         <div class="githubHead">
-            <div class="mainImg">Circle</div>
+            <div class="mainImg"><img src="images\p1.png" alt="GitHub User Image"></div>
             <div class="githubInfo">
                 <div class="githubUser">Github Username</div>
                 <div class="githubUserName"><a href="">@githubusername</a></div>
                 <div class="githubJoinedDate">Joined Date</div>
             </div>
         </div>
-    </div>
+
 
 
         <div class="githubFact">
@@ -55,15 +54,15 @@
                     <div class="followerTotal">0</div>
                 </div>
                 <div class="following">
-                    <div class="following Heading">Following</div>
-                    <div class="following Total">0</div>
+                    <div class="followingHeading">Following</div>
+                    <div class="followingTotal">0</div>
                 </div>
             </div>
 
             <div class="githubSocial">
                 <div class="location">
                     <i class="fa-solid fa-location-dot"></i>
-                    <p class="locations">Location</p>
+                    <p class="locations"> Location</p>
                 </div>
 
                 <div class="twitter">
@@ -82,6 +81,11 @@
                 </div>
             </div>
         </div>
-        <script src="https://kit.fontawesome.com/d77a9f41c5.js" crossorigin="anonymous"></script>
-    </body>
+
+    </div>
+    <script src="https://kit.fontawesome.com/d77a9f41c5.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+
 </html>
